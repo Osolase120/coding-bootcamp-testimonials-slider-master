@@ -4,31 +4,27 @@ const nextBtn = document.querySelector(".btn:last-child");
 
 let currentIndex = 0;
 
-// Show only the active testimonial
 function showTestimonial(index) {
   cards.forEach((card, i) => {
     card.classList.toggle("active", i === index);
   });
 }
 
-// Initial state
 showTestimonial(currentIndex);
 
-// Next button
 nextBtn.addEventListener("click", () => {
   currentIndex++;
   if (currentIndex >= cards.length) {
-    currentIndex = 0; // loop back
+    currentIndex = 0;
   } else {
     showTestimonial(currentIndex);
   }
 });
 
-// Previous button
 prevBtn.addEventListener("click", () => {
   currentIndex--;
   if (currentIndex < 0) {
-    currentIndex = cards.length -1; // loop to end
+    currentIndex = cards.length -1;
   } else {
     showTestimonial(currentIndex);
   }
