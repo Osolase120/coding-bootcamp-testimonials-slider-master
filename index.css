@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.Testimonials {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Testimonials-container {
+    padding-bottom: 7rem;
+}
+
+.parent-container {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     top: 50px;
+}
+
+.Testimonials-card {
+    display: none;
+    max-height: 40.9rem;
+    width: 360px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 8px 16px hsla(265, 75%, 4%, .1);
+    padding: 2rem 1.5rem 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Testimonials-card.active {
+    display: block;
+}
+
+.img-bg {
+    position: relative;
+    background-image: url(./images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 28px 20px;
+}
+
+.Testimonials-img {
+    width: 250px;
+    margin: 0 auto 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 40px hsl(240, 18%, 77%);
+}
+
+.Testimonials-description {
+    background-image: url(/images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 50% 0;
+    color: hsl(240, 38%, 20%);
+    font-weight: 300;
+    padding: 25px 5px;
+    text-align: center;
+    position: relative;
+}
+
+/* .Testimonials-desk {
+    display: flex;
+    flex-direction: column;
+} */
+
+.Testimonials-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(240, 38%, 20%);
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+span {
+    color: hsl(240, 18%, 77%);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.tanya-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 345px;
+    height: 40px;
+    width: 80px;
+    gap: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.tanya-btn button {
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+}
+
+.curve {
+    position: relative;
+    right: 31px;
+    height: 75px;
+}
+
+@media screen and (max-width: 375px) {
+
+.Testimonials-card {
+    max-height: 40.2rem;
+    width: 350px;
+}
+
+
+.Testimonials-img {
+    width: 240px;
+}
+
+.Testimonials-description {
+    padding: 25px 2px;
+}
+
+.tanya-btn {
+    top: 330px;
+    height: 38px;
+    width: 70px;
+    gap: 25px;
+}
+
+.curve {
+    position: relative;
+    right: 25px;
+    height: 75px;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+.parent-container {
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     top: 60px;
+}
+
+.Testimonials-card {
+    height: 42rem;
+    width: 85rem;
+}
+
+.Testimonials-card.active {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img-bg {
+    position: relative;
+    left: -80px;
+    padding: 49px 55px;
+}
+
+.Testimonials-img {
+    width: 450px;
+}
+
+.Testimonials-description {
+    background-image: url(/images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: 16%;
+    background-position: 19% 142px;
+    color: hsl(240, 38%, 20%);
+    font-weight: 300;
+    font-size: 30px;
+    padding: 180px 0;
+    text-align: start;
+    margin-left: -317px;
+}
+
+.Testimonials-desk {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.Testimonials-name {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+    top: 385px;
+}
+
+.Testimonials-name.Sinclair {
+    right: 874px;
+}
+
+.Testimonials-name.Tarkpor {
+    right: 765px;
+}
+
+.tanya-btn {
+    top: 570px;
+    left: 56rem;
+    height: 43px;
+    width: 85px;
+}
+
+.tanya-btn button {
+    height: 16px;
+}
+
+.curve {
+    position: relative;
+    top: 485px;
+    right: 22px;
+    height: 135px;
+}
+
+}
